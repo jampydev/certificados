@@ -1,0 +1,183 @@
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://portalelyonyireh.edu.co/styles/assets/images/background/Fondo-Login-Yinn.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Aumentar el tamaño máximo */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.card-header .logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.card-header h1 {
+    font-size: 1.8rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; /* Aseguramos que el padding no cause desbordamiento */
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 1rem;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: #0d6efd;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background: #0d6efd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: #004bb7;
+}
+
+#loading-container {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #0d6efd;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message {
+    color: #d9534f;
+    margin-top: 10px;
+}
+
+#certificado-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#certificado-canvas {
+
+    width: 80%;
+    max-width: 333px; /* Ajustamos el tamaño máximo del canvas */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+
+    body {
+
+        height: 90vh;
+
+
+    }
+
+
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-group input {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #certificado-canvas {
+        max-width: 80%; /* Aseguramos que el canvas se ajuste bien en pantallas pequeñas */
+    }
+}
